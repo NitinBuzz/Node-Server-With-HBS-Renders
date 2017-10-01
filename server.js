@@ -13,8 +13,11 @@ hbs.registerHelper('CapIt', string => {
 });
 
 app.use((req, res, next) => {
-  res.render('down.hbs');
+  next();
 });
+//app.use((req, res, next) => {
+//  res.render('down.hbs');
+//});
 
 app.use(express.static(__dirname + '/public'));
 
