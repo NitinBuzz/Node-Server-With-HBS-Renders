@@ -12,9 +12,9 @@ hbs.registerHelper('CapIt', string => {
   return string.toUpperCase();
 });
 
-app.use((req, res, next) => {
-  res.render('down.hbs');
-});
+//app.use((req, res, next) => {
+//  res.render('down.hbs');
+//});
 
 app.use(express.static(__dirname + '/public'));
 
